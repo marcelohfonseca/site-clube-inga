@@ -3,7 +3,6 @@ services:
   frontend:
     image: nginx:latest
     volumes:
-      # - ./home-page:/usr/share/nginx/html/
-      - /usr/share/nginx/html/
+      - ./site:/usr/share/nginx/html/
     ports:
       - 80:80
