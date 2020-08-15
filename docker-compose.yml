@@ -1,7 +1,7 @@
 version: '3'
 services:
   frontend:
-    image: nginx:latest
+    image: nginx:1.19
     volumes:
       - ./site:/usr/share/nginx/html/
     ports:
