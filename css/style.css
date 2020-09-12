@@ -1,4 +1,20 @@
-#menu ul {
-    padding:0px;
-    margin:0px;
+/* menu do site */
+.nav-bar {
+    display: block;
+}
+
+.nav-bar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar li {
+    float: right;
+    list-style-type: none;
+}
+
+.nav-bar li a {
+    display: block;
+    text-decoration: none;
+    padding-right: 10px;
 }
