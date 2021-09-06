@@ -344,6 +344,11 @@ footer a {
         align-items: center;
         padding: 40px;
     }
+
+    section.brands .container .partners img {
+        max-height: 50px
+    }
+
 }
 
 @media (max-width: 630px) {
@@ -352,6 +357,6 @@ footer a {
         flex-direction: column;
         align-items: center;
         padding: 40px;
-    }
+    }   
 
 }
