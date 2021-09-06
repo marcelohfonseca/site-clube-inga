@@ -49,7 +49,7 @@ header img {
     width: 75px;
     margin-left: 15px;
     padding: 5px;
-    border-radius: 50%;
+    border-radius: 50%;    
 }
 
 header nav ul {
@@ -72,6 +72,56 @@ header nav ul li a:hover {
 }
 
 /* ------------------------------
+    Section: wrapper
+------------------------------ */
+
+section.wrapper {    
+    height: 100vh;    
+    background-image: url("../img/foto-cabecalho.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+section.wrapper .container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.wrapper .container h2 {
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+    font-size: 5.0rem;
+}
+
+span:before {
+    content: '';
+    animation: animate infinite 8s;
+}
+
+@keyframes animate {
+    0% {
+        content: 'de Corrida';
+    }
+    25% {
+        content: 'de Duatlon';
+    }
+    50% {
+        content: 'de Triatlon';
+    }
+    75% {
+        content: 'de Treino Funcional';
+    }
+    100% {
+        content: 'de Corrida';
+    }
+}
+
+/* ------------------------------
     Section: about
 ------------------------------ */
 
@@ -80,12 +130,14 @@ section.about {
     max-width: 980px;
     display: flex;    
     margin: auto;
-    padding-top: 20px;
+    padding-top: 80px;    
 }
 
 section.about img {
     width: 50%;
     border-radius: 10px;
+    border: 1px solid;
+    border-color: gray;
 }
 
 section.about .container {
@@ -110,21 +162,28 @@ section.coaches {
 }
 
 section.coaches h2 {
-    text-align: center;
+    text-align: center;    
+}
+
+section.coaches .coach h3 {
+    color: white;
 }
 
 section.coaches .container {
-    display: flex;    
+    display: flex;
 }
 
 section.coaches .container .coach {
     width: 100%;    
     padding: 20px;
-    text-align: center;    
+    text-align: center;
+    margin: 10px;
+    background-color: #020052;
+    border-radius: 10px;
 }
 
 section.coaches .container .coach p {
-    color: #020052;
+    color: white;
     font-size: 1.8rem;
     line-height: 2.5rem;
 }
@@ -132,8 +191,8 @@ section.coaches .container .coach p {
 section.coaches .container img {
     width: 50%;
     border-radius: 10px;
-    border: 2px solid;
-    border-color: gray;
+    border: 3px solid;
+    border-color: yellow
 }
 
 /* ------------------------------
@@ -152,13 +211,19 @@ section.services h2 {
 }
 
 section.services .container {
-    display: flex;    
+    display: flex;
+    
 }
 
 section.services .container .service {
     width: 100%;    
     padding: 20px;
     text-align: center;
+
+    border: 1px solid;
+    border-color: gray;
+    border-radius: 10px;
+    margin: 5px;
 }
 
 section.services .container .service p {
@@ -205,11 +270,10 @@ section.brands .container .partners img {
     Section: contact
 ------------------------------ */
 
-section.contact {
-    width: 95%;
-    max-width: 980px;    
+section.contact {    
     margin: auto;
     padding-top: 20px;
+    background-color: yellow;
 }
 
 section.contact h2 {
@@ -217,12 +281,15 @@ section.contact h2 {
 }
 
 section.contact .container {
-    display: flex;    
+    width: 95%;
+    max-width: 980px;
+    display: flex;
+    margin: auto;
 }
 
 section.contact .container .social {    
     width: 100%;    
-    padding: 20px;
+    padding: 20px 0px 80px 0px;
     text-align: center;
 }
 
