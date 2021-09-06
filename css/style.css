@@ -211,15 +211,13 @@ section.services h2 {
 }
 
 section.services .container {
-    display: flex;
-    
+    display: flex;    
 }
 
 section.services .container .service {
     width: 100%;    
     padding: 20px;
     text-align: center;
-
     border: 1px solid;
     border-color: gray;
     border-radius: 10px;
@@ -317,4 +315,43 @@ footer {
 footer a {
     color:white;
     text-decoration: none;
+}
+
+/* ------------------------------
+    Media Queries
+------------------------------ */
+
+@media (max-width: 768px) {
+    
+    html {
+        font-size: 50%;
+    }
+
+    /* About */
+    section.about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section.about img {
+        order: -1;
+        margin: auto;
+    }
+
+    /* Coaches */
+    section.coaches .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 630px) {
+    
+    section.services .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+    }
+
 }
