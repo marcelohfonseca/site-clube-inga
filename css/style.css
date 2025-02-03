@@ -103,24 +103,6 @@ span:before {
     animation: animate infinite 8s;
 }
 
-@keyframes animate {
-    0% {
-        content: 'de Corrida';
-    }
-    25% {
-        content: 'de Duatlon';
-    }
-    50% {
-        content: 'de Triatlon';
-    }
-    75% {
-        content: 'de Treino Funcional';
-    }
-    100% {
-        content: 'de Corrida';
-    }
-}
-
 /* ------------------------------
     Section: about
 ------------------------------ */
