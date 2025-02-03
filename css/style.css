@@ -76,8 +76,8 @@ header nav ul li a:hover {
 ------------------------------ */
 
 section.wrapper {    
-    height: 100vh;    
-    background-image: url("../img/foto-cabecalho.jpg");
+    height: 50vh;
+    background-image: url("../img/img_background.jpeg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -210,40 +210,6 @@ section.services .container .service p {
     color: #020052;
     font-size: 1.8rem;
     line-height: 2.0rem;
-}
-
-/* ------------------------------
-    Section: brands
------------------------------- */
-
-section.brands {
-    width: 95%;
-    max-width: 980px;    
-    margin: auto;
-    padding-top: 20px;
-}
-
-section.brands h2 {
-    text-align: center;
-}
-
-section.brands .container .sponsors {
-    text-align: center;
-}
-
-section.brands .container .sponsors img {
-    max-height: 100px;
-    padding: 20px;
-}
-
-section.brands .container .partners {
-    padding: 20px;    
-    text-align: center;
-}
-
-section.brands .container .partners img {
-    max-height: 100px;
-    padding: 20px;
 }
 
 /* ------------------------------
