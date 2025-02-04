@@ -76,8 +76,8 @@ header nav ul li a:hover {
 ------------------------------ */
 
 section.wrapper {    
-    height: 100vh;    
-    background-image: url("../img/foto-cabecalho.jpg");
+    height: 50vh;
+    background-image: url("../img/img_background.jpeg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -103,24 +103,6 @@ span:before {
     animation: animate infinite 8s;
 }
 
-@keyframes animate {
-    0% {
-        content: 'de Corrida';
-    }
-    25% {
-        content: 'de Duatlon';
-    }
-    50% {
-        content: 'de Triatlon';
-    }
-    75% {
-        content: 'de Treino Funcional';
-    }
-    100% {
-        content: 'de Corrida';
-    }
-}
-
 /* ------------------------------
     Section: about
 ------------------------------ */
@@ -128,20 +110,23 @@ span:before {
 section.about {    
     width: 95%;
     max-width: 980px;
-    display: flex;    
+    display: flex;
+    flex-direction: column;    
     margin: auto;
-    padding-top: 80px;    
+    padding-top: 20px;    
 }
 
 section.about img {
-    width: 50%;
+    width: 90%;
     border-radius: 10px;
     border: 1px solid;
     border-color: gray;
+    margin: auto;
 }
 
 section.about .container {
     padding: 20px;
+    text-align: center;
 }
 
 section.about .container p {
@@ -150,19 +135,74 @@ section.about .container p {
     line-height: 2.5rem;
 }
 
+section.about .checkout {
+    margin: auto;
+}
+
+section.about .checkout img {
+    width: 50px;
+    border: 0px;
+    display: block;
+}
+
+/* ------------------------------
+    Section: services
+------------------------------ */
+
+section.services {
+    width: 95%;
+    max-width: 980px;    
+    margin: auto;
+    padding-top: 20px;    
+}
+
+section.services h2 {
+    text-align: center;    
+}
+
+section.services .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+
+section.services .container .service {
+    width: 42%; /* Adjusted to fit two divs per line with some margin */
+    padding: 20px;
+    text-align: center;
+    border: 1px solid;
+    border-color: gray;
+    border-radius: 10px;
+    margin: 1%;    
+}
+
+section.services .container .service p {
+    color: #020052;
+    font-size: 1.8rem;
+    line-height: 2.0rem;    
+}
+
+section.services .container .service ul {
+    text-align: left;padding-left: 20px;
+}
+
+section.services .container .service ul li {
+    list-style: disc;    
+}
+
 /* ------------------------------
     Section: coaches
 ------------------------------ */
 
 section.coaches {
     width: 95%;
-    max-width: 980px;    
+    max-width: 980px;
     margin: auto;
     padding-top: 20px;
 }
 
 section.coaches h2 {
-    text-align: center;    
+    text-align: center;
 }
 
 section.coaches .coach h3 {
@@ -174,7 +214,7 @@ section.coaches .container {
 }
 
 section.coaches .container .coach {
-    width: 100%;    
+    width: 100%;
     padding: 20px;
     text-align: center;
     margin: 10px;
@@ -196,80 +236,11 @@ section.coaches .container img {
 }
 
 /* ------------------------------
-    Section: services
------------------------------- */
-
-section.services {
-    width: 95%;
-    max-width: 980px;    
-    margin: auto;
-    padding-top: 20px;
-}
-
-section.services h2 {
-    text-align: center;
-}
-
-section.services .container {
-    display: flex;    
-}
-
-section.services .container .service {
-    width: 100%;    
-    padding: 20px;
-    text-align: center;
-    border: 1px solid;
-    border-color: gray;
-    border-radius: 10px;
-    margin: 5px;
-}
-
-section.services .container .service p {
-    color: #020052;
-    font-size: 1.8rem;
-    line-height: 2.0rem;
-}
-
-/* ------------------------------
-    Section: brands
------------------------------- */
-
-section.brands {
-    width: 95%;
-    max-width: 980px;    
-    margin: auto;
-    padding-top: 20px;
-}
-
-section.brands h2 {
-    text-align: center;
-}
-
-section.brands .container .sponsors {
-    text-align: center;
-}
-
-section.brands .container .sponsors img {
-    max-height: 100px;
-    padding: 20px;
-}
-
-section.brands .container .partners {
-    padding: 20px;    
-    text-align: center;
-}
-
-section.brands .container .partners img {
-    max-height: 100px;
-    padding: 20px;
-}
-
-/* ------------------------------
     Section: contact
 ------------------------------ */
 
 section.contact {    
-    margin: auto;
+    margin-top: 20px;
     padding-top: 20px;
     background-color: yellow;
 }
@@ -279,15 +250,15 @@ section.contact h2 {
 }
 
 section.contact .container {
-    width: 95%;
+    width: 75%;
     max-width: 980px;
     display: flex;
     margin: auto;
 }
 
 section.contact .container .social {    
-    width: 100%;    
-    padding: 20px 0px 80px 0px;
+    width: 100%;
+    padding: 0px 0px 20px 0px;
     text-align: center;
 }
 
