@@ -153,26 +153,27 @@ section.services {
     width: 95%;
     max-width: 980px;    
     margin: auto;
-    padding-top: 20px;
+    padding-top: 20px;    
 }
 
 section.services h2 {
-    text-align: center;
+    text-align: center;    
 }
 
 section.services .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;    
 }
 
 section.services .container .service {
-    width: 40%; /* Adjusted to fit two divs per line with some margin */
+    width: 42%; /* Adjusted to fit two divs per line with some margin */
     padding: 20px;
     text-align: center;
     border: 1px solid;
     border-color: gray;
     border-radius: 10px;
-    margin: 1%;
+    margin: 1%;    
 }
 
 section.services .container .service p {
@@ -239,7 +240,7 @@ section.coaches .container img {
 ------------------------------ */
 
 section.contact {    
-    margin: auto;
+    margin-top: 20px;
     padding-top: 20px;
     background-color: yellow;
 }
@@ -249,15 +250,15 @@ section.contact h2 {
 }
 
 section.contact .container {
-    width: 95%;
+    width: 75%;
     max-width: 980px;
     display: flex;
     margin: auto;
 }
 
 section.contact .container .social {    
-    width: 100%;    
-    padding: 20px 0px 80px 0px;
+    width: 100%;
+    padding: 0px 0px 20px 0px;
     text-align: center;
 }
 
