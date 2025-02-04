@@ -110,26 +110,39 @@ span:before {
 section.about {    
     width: 95%;
     max-width: 980px;
-    display: flex;    
+    display: flex;
+    flex-direction: column;    
     margin: auto;
-    padding-top: 80px;    
+    padding-top: 20px;    
 }
 
 section.about img {
-    width: 50%;
+    width: 80%;
     border-radius: 10px;
     border: 1px solid;
     border-color: gray;
+    margin: auto;
 }
 
 section.about .container {
     padding: 20px;
+    text-align: center;
 }
 
 section.about .container p {
     color: #020052;
     font-size: 1.8rem;
     line-height: 2.5rem;
+}
+
+section.about .checkout {
+    margin: auto;
+}
+
+section.about .checkout img {
+    width: 50px;
+    border: 0px;
+    display: block;
 }
 
 /* ------------------------------
